@@ -22,7 +22,7 @@ import torch
 
 TORCHTEXT_AVAILABLE = importlib.util.find_spec("torchtext") is not None
 if TORCHTEXT_AVAILABLE:
-    from torchtext.data import Batch
+    from torchtext.legacy.data import Batch
 else:
     Batch = type(None)
 
